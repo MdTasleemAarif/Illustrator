@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Illustrator Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 class="title"> Explore My <span class="glow">Illustrator Design</span></h1>
+
+  <div class="category-container">
+    <div class="category-card" onclick="showImage('myphoto.png')">
+      <h2>🩺 Medical Flyer</h2>
+    </div>
+    <div class="category-card" onclick="showImage('22.2General.webp')">
+      <h2>✈️ Travel Flyer</h2>
+    </div>
+    <div class="category-card" onclick="showImage('72.0General.webp')">
+      <h2>👤 Persona Icons</h2>
+    </div>
+    <div class="category-card" onclick="showImage('72.1General.webp')">
+      <h2>📄 Stationary</h2>
+    </div>
+    <div class="category-card" onclick="showImage('myphoto.png')">
+      <h2>📘 Brand Guidelines</h2>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="Flyer" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
